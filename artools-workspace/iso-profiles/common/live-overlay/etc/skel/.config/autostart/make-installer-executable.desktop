@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=chmod +x "~/Desktop/calamares.desktop"
+Name=Make the installer on the desktop executable
+StartupNotify=false
+Terminal=false
+Type=Application
+Name[en_US]=make-installer-executable.desktop

@@ -1,0 +1,12 @@
+# loads by default common/packages-{base,apps}
+
+mkinitcpio-nfs-utils
+squashfs-tools
+
+artix-grub-live
+
+artix-live-@initsys@
+
+artix-archlinux-support
+
+zsh

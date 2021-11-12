@@ -1,0 +1,5 @@
+# this file is not meant to be appended or edited
+# it just serves as configurable list
+# to create the mkinitcpio initramfs for the iso
+
+iso-initcpio
