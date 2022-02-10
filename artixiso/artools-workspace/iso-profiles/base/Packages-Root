@@ -17,7 +17,7 @@ artix-archlinux-support
 ###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
-alci-dwm
+alci-dwm-git
 alci-calamares
 alci-calamares-config
 xterm
