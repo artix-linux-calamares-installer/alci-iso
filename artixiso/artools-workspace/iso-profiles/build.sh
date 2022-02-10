@@ -1,4 +1,4 @@
-#1/usr/bin/env bash
+#!/usr/bin/env bash
 
 non_root_user=liveuser # since makepkg doesn't run as root, we need a non root user for aur package building ( make sure the user has no password )
 init=runit
@@ -8,9 +8,8 @@ init=runit
 #init=openrc
 
 buildiso -i $init -p base -x
-artix-chroot /var/lib/artools/buildiso/base/artix/rootfs pacman-key --init
-artix-chroot /var/lib/artools/buildiso/base/artix/rootfs pacman-key --populate artix
-artix-chroot /var/lib/artools/buildiso/base/artix/rootfs pacman-key --populate archlinux
+
+artix-chroot /var/lib/artools/buildiso/base/artix/rootfs bash -c "pacman-key --init; pacman-key --populate artix;pacman-key --populate archlinux"
 
 printf "\033[1;33mAUR_BUILD:\033[0m Reading package list.\n"
 for package in $(cat ./AUR_PACKAGES | grep -vE "^#.*$")
@@ -39,3 +38,5 @@ fi
 rm -rf /etc/aur_building
 
 buildiso -i $init -p base -sc
+buildiso -i $init -p base -bc
+buildiso -i $init -p base -zc
