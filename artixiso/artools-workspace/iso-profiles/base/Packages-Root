@@ -27,3 +27,4 @@ make
 xorg-xkill
 xorg-xrdb
 dex
+network-manager-applet
