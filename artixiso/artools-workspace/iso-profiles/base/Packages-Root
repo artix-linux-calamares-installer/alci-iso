@@ -8,3 +8,22 @@ artix-grub-live
 artix-live-@initsys@
 
 artix-archlinux-support
+
+#######################################################
+###                    ALCI                         ###
+#######################################################
+
+#######################################################
+###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
+###             VIA CALAMARES CONFIG                ###
+#######################################################
+alci-dwm
+alci-calamares
+alci-calamares-config
+xterm
+sddm
+libxinerama
+make
+xorg-xkill
+xorg-xrdb
+dex
