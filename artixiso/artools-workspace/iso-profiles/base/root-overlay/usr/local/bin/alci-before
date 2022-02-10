@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+echo "#################################"
+echo "Start alci-before"
+echo "#################################"
+
+echo "Populate Core Team keys"
+echo "#################################"
+pacman-key --init
+pacman-key --populate artix
+pacman-key --populate archlinux
+
+echo "#################################"
+echo "End alci-before"
+echo "#################################"
+rm /usr/local/bin/alci-before
+
