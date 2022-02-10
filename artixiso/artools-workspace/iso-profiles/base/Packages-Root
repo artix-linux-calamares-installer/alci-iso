@@ -21,7 +21,6 @@ alci-dwm-git
 alci-calamares
 alci-calamares-config
 xterm
-sddm
 libxinerama
 make
 xorg-xkill
