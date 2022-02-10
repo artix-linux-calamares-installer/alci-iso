@@ -1,7 +1,7 @@
 # Static table lookup for hostnames.
 # See hosts(5) for details.
 
-127.0.0.1	localhost.localdomain artix-live localhost
+127.0.0.1	localhost.localdomain artix-linux-calamares-installer localhost
 ::1	localhost
 
 #::1	localhost ip6-localhost ip6-loopback
