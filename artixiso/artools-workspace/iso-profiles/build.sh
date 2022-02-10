@@ -22,7 +22,7 @@ done
 
 printf "\033[1;33mAUR_BUILD:\033[0m Building packages.\n"
 
-artix-chroot /var/lib/artools/buildiso/base/artix/rootfs chmod 777 -R /etc/aur_building/paru-bin
+artix-chroot /var/lib/artools/buildiso/base/artix/rootfs chmod 777 -R /etc/aur_building
 dirs=$(artix-chroot /var/lib/artools/buildiso/base/artix/rootfs find /etc/aur_building -mindepth 1 -maxdepth 1 -type d)
 for dir in $dirs
 do
