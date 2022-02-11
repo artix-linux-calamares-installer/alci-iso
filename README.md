@@ -7,3 +7,6 @@ We can interrupt this process, stop the removal of the GUI and then proceed to a
 
 # For Builders:
 You can direclty install AUR packages onto the root filesystem without compiling them by appending their names to `AUR_PACKAGES` file.
+
+# Init:
+Default init system is `runit` edit `build.sh` to switch to openrc/dinit/s6/suite66
