@@ -19,6 +19,11 @@ echo "#################################"
 rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 
+echo "Remove artix-live"
+echo "#################################"
+rm -f /usr/bin/artix-chroot
+rm -f /usr/bin/artix-live
+
 echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
