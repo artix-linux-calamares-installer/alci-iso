@@ -28,6 +28,10 @@ echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
+echo "Remove liveuser"
+echo "#################################"
+userdel --remove liveuser
+
 echo "#################################"
 echo "End alci-final"
 echo "#################################"
