@@ -10,3 +10,6 @@ You can direclty install AUR packages onto the root filesystem without compiling
 
 # Init:
 Default init system is `runit` edit `build.sh` to switch to openrc/dinit/s6/suite66
+
+# Discord server
+https://discord.gg/JNH5Wwv9c2
