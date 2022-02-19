@@ -9,6 +9,10 @@ pacman-key --init
 pacman-key --populate artix
 pacman-key --populate archlinux
 
+echo "Remove Artix theme from grub"
+echo "#################################"
+sed -i 's/\(GRUB_THEME.*\)/#\1/g' /etc/default/grub
+
 echo "#################################"
 echo "End alci-before"
 echo "#################################"
