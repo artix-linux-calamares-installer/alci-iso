@@ -6,16 +6,12 @@ artix-grub-theme
 artix-branding-base
 
 elogind-@initsys@
-acpi
-acpid-@initsys@
 alsa-firmware
 alsa-utils-@initsys@
 avahi-@initsys@
 b43-fwcutter
-bluez-@initsys@
 btrfs-progs
 crda
-cronie-@initsys@
 cryptsetup-@initsys@
 dhclient
 dhcpcd-@initsys@
@@ -41,7 +37,6 @@ logrotate
 lsb-release
 lvm2-@initsys@
 man-db
-man-pages
 mdadm-@initsys@
 memtest86+
 mkinitcpio
