@@ -7,7 +7,7 @@ RUN pacman -S --noconfirm --needed artools iso-profiles archlinux-keyring archli
 RUN pacman-key --init
 RUN pacman-key --populate
 
-WORKDIR /axyl-artix-iso
+WORKDIR /artix-iso
 COPY . .
 
 RUN mkdir -p ~/.config
