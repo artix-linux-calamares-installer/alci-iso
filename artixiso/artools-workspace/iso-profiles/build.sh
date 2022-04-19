@@ -81,7 +81,7 @@ _read_aur_packages() {
   local _list=$(cat ./AUR_PACKAGES | grep -vE "^#.*$")
 
   if [[ ! ${_list} == "" ]]; then
-      _build_aur_packages ${_list}
+      _build_aur_packages "$(echo ${_list} | xargs -P $(nproc))"
   else
       _msg_info "WARNING" "No Package names were found in the 'AUR_PACKAGES' file. Skipping..."
   fi
