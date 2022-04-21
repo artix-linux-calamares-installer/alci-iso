@@ -1,5 +1,5 @@
 # Dockerfile for building the Artix ISO
-FROM angelofallaria/artix-base
+FROM gabrielmatthews/artix-base
 
 RUN pacman -Syyu --noconfirm
 RUN pacman -S --noconfirm --needed artools iso-profiles archlinux-keyring archlinux-mirrorlist 
